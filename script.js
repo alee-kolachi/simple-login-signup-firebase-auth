@@ -6,10 +6,7 @@
     };
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
-    
-      var loc = window.location.pathname;
-var dir = loc.substring(0, loc.lastIndexOf('/'));
-if(firebase.auth().currentUser !=null){window.location.replace(dir + '/passwords.html');}
+
     //Get Elements
     const txtEmail = document.getElementById("txtEmail");
     const txtPassword = document.getElementById("txtPassword");
@@ -18,8 +15,6 @@ if(firebase.auth().currentUser !=null){window.location.replace(dir + '/passwords
 
     //Add Login Event
     btnLogin.addEventListener('click', e => {
-        //growSpinner.classList.remove("hide");
-        //get email and password
         const email = txtEmail.value;
         const password = txtPassword.value;
 
