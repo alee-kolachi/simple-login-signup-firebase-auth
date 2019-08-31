@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-auth.js"></script>
+    
+    <!--Adding Bootstrap-->    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    
+    <title>Login & Signup Firebase</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <div class="col-4 center">
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="text" class="form-control shadow-sm" id="txtEmail" name="email">
+          </div>
+          <div class="form-group">
+            <label for="pwd">Password:</label>
+            <input type="password" class="form-control shadow-sm" id="txtPassword" name="password">
+          </div>
+
+            <button type="submit" class="btn btn-primary shadow" id="btnLogin">Login</button>
+            <button type="submit" class="btn btn-primary shadow" id="btnSignup">Signup</button>
+          
+<script src="script.js"></script>
+</body>
+</html>
